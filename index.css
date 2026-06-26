@@ -1,0 +1,383 @@
+/* Общий стиль для шапки */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Фон: густой лес, как в начале каждой серии */
+    background: linear-gradient(135deg, #000000 0%, #353535 100%);
+    font-family: 'Montserrat', sans-serif; /* Основной шрифт для всего текста */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- ШАПКА (HEADER) --- */
+.gravity-header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(247, 247, 247, 0.2);
+    border-bottom: 3px solid #f7d308; /* Желтая полоса, как лента с предупреждением */
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin: 0 2%;
+    max-width: 60vw;
+    width: 100%;
+}
+
+/* Логотип: название в мультяшном стиле */
+.logo h1 {
+    font-family: 'Oi', cursive; /* Шрифт дневника */
+    font-size: 20px;
+    color: #fffdfddc; /* Цвет ржавчины/старого металла */
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.logo p {
+    font-size: 20px;
+    color: #f5f5f5;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 370;
+}
+
+.header_logo {
+    max-width: 5vw;
+    width: 100%;
+}
+.main-nav {
+    margin: 0 2%;
+}
+
+/* Меню навигации */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #f5eeee;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #f1c40f;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Кнопки в шапке */
+.actions button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn-yellow {
+    background-color: #ccb65d;
+    color: #000000;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn-yellow:hover {
+    background-color: #e2bf4c;
+    transform: scale(1.05);
+}
+
+/* --- ГЛАВНЫЙ ЭКРАН (HERO) --- */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 4px 4px #e4dc76
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 18px;
+    font-family: 'Oi', cursive; /* Даже большой заголовок делаем в стиле комикса */
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+    font-weight: 100;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    padding: 15px 40px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: rgb(0, 0, 0);
+    color: #2c3e50;
+}
+
+/* --- КАРТОЧКИ (FEATURES) --- */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    max-width: 30vw;
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.15),
+        0 0 0 3px rgba(243, 211, 27, 0.918); /* Легкая желтая обводка */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+        0 20px 30px rgba(0,0,0,0.2),
+        0 0 0 3px rgba(241, 196, 15, 0.932);
+}
+
+/* Заголовки внутри карточек - самые главные в стиле мультика */
+.feature-card h3 {
+    font-family: 'Oi', cursive;
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    text-shadow: 3px 3px 0px #000000, 6px 6px 0px rgba(0, 0, 0, 0.1);
+    font-weight: 100;
+}
+
+.feature-card p {
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- ГАЛЕРЕЯ --- */
+.gallery {
+    padding: 20px 13px;
+    text-align: center;
+     font-weight: 40;
+}
+
+.gallery h2 {
+    color: white;
+    font-family: 'Oi', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 0px rgba(197, 197, 197, 0.3);
+    font-weight: 40;
+
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item 
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ЭТА СТРОЧКА — ГЛАВНОЕ ЛЕКАРСТВО! */
+    border-radius: 15px;
+    display: block;
+}
+
+{
+    background: rgba(255,255,255,0.9);
+    height: 220px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:15px;
+    font-weight:bold;
+    color:#000000;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px dashed #f1c40f;
+     font-weight: 40;
+}
+
+/* Адаптив для телефонов */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        
+    }
+}
+
+/* Контейнер карусели — рамка и скрытие лишнего */
+.carousel-container {
+  width: 700px;           /* Ширина всей карусели (можно менять) */
+  overflow: hidden;       /* Скрывает всё, что вылезает за границы */
+  margin: 20px auto;      /* Отступы и центрирование */
+  border-radius: 10px;     /* Скруглённые углы */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+}
+
+/* Лента с картинками */
+.carousel {
+  display: flex;          /* Картинки в ряд */
+  gap: 10px;              /* Расстояние между фото */
+  transition: transform 0.5s ease-in-out; /* Плавное движение */
+}
+
+/* Каждая картинка */
+.slide {
+  min-width: 180px;       /* Минимальная ширина фото */
+  height: 200px;          /* Высота фото */
+  object-fit: cover;      /* Картинка заполняет блок, не искажаясь */
+  border-radius: 8px;     /* Скругление углов фото */
+}
+
+/* Движение при наведении */
+.carousel-container:hover .carousel {
+  transform: translateX(-190px); /* Сдвиг влево на ~190px */
+}
+
+.characters-grid {
+    display: grid;
+    /* Автоматически подстраивает колонки: минимум 220px, если места мало - переносит */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.char-card {
+    background: rgba(255, 255, 255, 0.95); /* Чуть прозрачный белый фон */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.15),
+        0 0 0 3px rgba(243, 211, 27, 0.5); /* Желтая обводка как в дневнике */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.char-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+        0 20px 30px rgba(0,0,0,0.25),
+        0 0 0 3px rgba(241, 196, 15, 0.9); /* Яркая желтая обводка при наведении */
+}
+
+/* Обертка для картинки, чтобы она не вылезала и была квадратной */
+.char-img-wrapper {
+    width: 100%;
+    height: 250px; /* Фиксированная высота карточки */
+    overflow: hidden;
+    background-color: #000; /* Черный фон, если картинка не загрузится */
+    position: relative;
+}
+
+.char-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ВАЖНО: Картинка заполняет блок, не искажаясь */
+    display: block;
+    transition: transform 0.5s;
+}
+
+/* Эффект зума картинки при наведении на карточку */
+.char-card:hover .char-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.char-info {
+    padding: 20px;
+    width: 100%;
+}
+
+.char-name {
+    font-family: 'Oi'
+    font-size: 24px;
+    color: #f3e9e9;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    
+    /* Мультяшная тень текста */
+    text-shadow: 2px 2px 0px #000, 4px 4px 0px rgba(0, 0, 0, 0.1);
+    font-weight: 30;
+}
+
+.char-role {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 1;
+}

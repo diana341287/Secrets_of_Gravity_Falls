@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Персонажи Гравити Фолз</title>
+    
+    <!-- Подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oi&display=swap" rel="stylesheet">
+    
+    <!-- ГЛАВНОЕ: Подключаем ОБЩИЙ стиль (style.css) -->
+    <!-- Убедись, что имя файла совпадает с твоим файлом стилей -->
+     <link rel="icon" href="images/icons8-елка-64.png" type="image/png">
+<title>Secrets of Gravity Falls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка (такая же, как на главной) -->
+    
+    <header class="gravity-header">
+        <div class="header-container">
+            <img src="./images/logo.png" class="header_logo">
+            <div class="logo">
+                <!-- Название города в мультяшном шрифте -->
+                <h1>Гравити Фолз</h1>
+                <p>Тайны маленького городка</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="main-nav_list">
+                    <li class="main-nav_list-item"><a href="index.html">Главная</a></li>
+                    <li class="main-nav_list-item"><a href="characters.html">Персонажи</a></li>
+                    
+                    <li class="main-nav_list-item"><a href="secret.html">Тайны</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="actions">
+            <button class="btn-yellow">Войти</button>
+            <button class="btn-yellow">Регистрация</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Заголовок секции -->
+        <section style="padding: 60px 20px; text-align: center; color: white;">
+            <h2 style="font-weight:100; font-family:'Oi', cursive; font-size: 3rem; margin-bottom: 15px; text-shadow: 2px 2px 0px rgba(0,0,0,0.5);">
+                Главные герои
+            </h2>
+            <p style="font-size: 1.2rem; opacity: 0.8;">
+                Раскройте тайны каждого жителя городка Гравити Фолз.
+            </p>
+        </section>
+
+        <!-- СЕТКА С КАРТОЧКАМИ ПЕРСОНАЖЕЙ -->
+        <!-- Класс characters-grid мы опишем в style.css ниже -->
+        <section class="characters-grid">
+            
+            <!-- Карточка 1: Диппер -->
+            <article class="char-card">
+                <div class="char-img-wrapper">
+                    <!-- Путь к картинке: папка images + имя файла -->
+                    <img src="./images/dipper.jpg" alt="Диппер Пайнс">
+                </div>
+                <div class="char-info">
+                    <h3 class="char-name">Диппер</h3>
+                    <p class="char-role">Искатель тайн</p>
+                </div>
+            </article>
+
+            <!-- Карточка 2: Мейбл -->
+            <article class="char-card">
+                <div class="char-img-wrapper">
+                    <img src="./images/mabel.jpg" alt="Мейбл Пайнс">
+                </div>
+                <div class="char-info">
+                    <h3 class="char-name">Мейбл</h3>
+                    <p class="char-role">Оптимистка и любительница свитеров</p>
+                </div>
+            </article>
+
+            <!-- Карточка 3: Дядя Стэн -->
+            <article class="char-card">
+                <div class="char-img-wrapper">
+                    <img src="./images/stan.jpg" alt="Дядя Стэн">
+                </div>
+                <div class="char-info">
+                    <h3 class="char-name">Дядя Стэн</h3>
+                    <p class="char-role">Хозяин Хижины Чудес</p>
+                </div>
+            </article>
+
+            <!-- Карточка 4: Зус -->
+            <article class="char-card">
+                <div class="char-img-wrapper">
+                    <img src="./images/soos.jpg" alt="Зус">
+                </div>
+                <div class="char-info">
+                    <h3 class="char-name">Зус</h3>
+                    <p class="char-role">Мастер на все руки</p>
+                </div>
+            </article>
+
+            <!-- Карточка 5: Венди -->
+            <article class="char-card">
+                <div class="char-img-wrapper">
+                    <img src="./images/wendi.jpg" alt="Венди">
+                </div>
+                <div class="char-info">
+                    <h3 class="char-name">Венди</h3>
+                    <p class="char-role">Работник Хижины, крутая девчонка</p>
+                </div>
+            </article>
+
+             <!-- Карточка 6: Форд -->
+             <article class="char-card">
+                <div class="char-img-wrapper">
+                    <img src="./images/ford.jpg" alt="Форд Пайнс">
+                </div>
+                <div class="char-info">
+                    <h3 class="char-name">Форд</h3>
+                    <p class="char-role">Ученый и исследователь паранормального</p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Кнопка возврата вниз страницы -->
+        <div style="text-align: center; padding: 40px;">
+            <a href="index.html" class="btn-primary">← Вернуться в Гравити Фолз</a>
+        </div>
+
+    </main>
+            <!-- НАЧАЛО ФУТЕРА -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Гравити Фолз</h3>
+                <p>Тайны маленького городка.</p>
+            </div>
+
+            <nav class="footer-nav">
+                <ul>
+                    <nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="characters.html">Персонажи</a></li>
+        <!-- ВОТ ЭТУ СТРОКУ НУЖНО ДОБАВИТЬ ОБЯЗАТЕЛЬНО -->
+        <li><a href="secret.html">Тайны</a></li> 
+    </ul>
+</nav>
+                    
+                </ul>
+            </nav>
+
+            <div class="footer-contact">
+                <p>Есть вопросы?</p>
+                <a href="mailto:gravity@example.com" class="email-link">gravity@example.com</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Вселенная Гравити Фолз. Все права защищены.</p>
+        </div>
+    </footer>
+    <!-- КОНЕЦ ФУТЕРА -->
+</body>
+</html>
+
+    </footer>
+</body>
+</html>
